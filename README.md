@@ -9,7 +9,7 @@ A simple blog application built using Django, where users can create, edit, and 
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
-- 
+
 ## Project Overview
 This Django Blog Project allows users to:
 - Create and manage blog posts.
@@ -22,8 +22,6 @@ This Django Blog Project allows users to:
 - User authentication (registration, login, logout).
 - Blog post management (create, edit, delete).
 - Commenting system for posts.
-- Pagination for posts.
-- User profile pages.
 - Admin panel for managing content.
 
 ## Technologies Used
