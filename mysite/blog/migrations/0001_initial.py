@@ -4,7 +4,7 @@ import datetime
 from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
-from django.utils.timezone import utc
+from django.utils.timezone import now
 import django.utils.timezone
 
 
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('author', models.CharField(max_length=200)),
                 ('text', models.TextField()),
-                ('created_date', models.DateTimeField(default=datetime.datetime(2022, 8, 15, 20, 31, 3, 23490, tzinfo=utc))),
+                ('created_date',models.DateTimeField(default=now)),
                 ('approved_comment', models.BooleanField(default=False)),
                 ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='blog.post')),
             ],

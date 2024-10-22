@@ -2,7 +2,7 @@
 
 import datetime
 from django.db import migrations, models
-from django.utils.timezone import utc
+from django.utils.timezone import now
 
 
 class Migration(migrations.Migration):
@@ -15,6 +15,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='comment',
             name='created_date',
-            field=models.DateTimeField(default=datetime.datetime(2022, 8, 15, 23, 35, 55, 474290, tzinfo=utc)),
+           field=models.DateTimeField(default=now),
+
         ),
     ]
