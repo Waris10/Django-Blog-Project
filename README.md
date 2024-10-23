@@ -43,7 +43,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/django-blog.git
+   git clone https://github.com/Waris10/Django-Blog-Project.git
    cd django-blog
    ```
 
